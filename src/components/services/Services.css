@@ -1,0 +1,36 @@
+.s-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.s-card{
+    display: flex;
+    gap: 1rem;
+    background: whitesmoke;
+    padding: 0.7rem 2rem;
+}
+.lo{
+    font-size: 2.5rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.text :nth-child(1){
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.text :nth-child(2){
+    font-size: 1rem;
+    font-weight: 200;
+}
+@media (max-width: 575px) {
+    .s-container{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+}

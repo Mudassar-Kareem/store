@@ -1,0 +1,64 @@
+.n-container {
+    display: flex;
+    padding: 0 3rem;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.n-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100vh;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.n-card {
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 44vh;
+    background: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.n-card > img {
+    margin-top: -3rem;
+}
+
+.n-card :nth-child(2) {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.n-card :nth-child(3) {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.price > button {
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    color: white;
+    background: gray;
+    border: 2px solid gray;
+}
+
+.price > button:hover {
+    transform: scale(1.2);
+}
+

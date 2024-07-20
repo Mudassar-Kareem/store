@@ -1,0 +1,19 @@
+.f-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background: gray;
+}
+.f-container>span{
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+@media (max-width: 575px) {
+    .f-container{
+        margin-top: 60rem;
+    }
+}

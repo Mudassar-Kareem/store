@@ -1,0 +1,139 @@
+.b-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.b-left {
+    width: 100%;
+    display: flex;
+    background: whitesmoke;
+    padding: 2rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.l-l {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.l-l :nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.l-l :nth-child(2),
+.l-l :nth-child(3) {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.l-l>button{
+    border: 2px solid gray;
+    color: white;
+    background: gray;
+    font-size: 1.3rem;
+}
+.l-l>button:hover{
+    color: gray;
+    background: white;
+}
+
+.b-left > img {
+    margin-bottom: -2.8rem;
+}
+
+.b-right {
+    display: flex;
+    background: skyblue;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 47%;
+    border-radius: 15px;
+}
+
+.b-right > img {
+    scale: 1;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (desktops, 992px and up) */
+@media (max-width: 1200px) {
+    .b-container {
+        padding: 0 2rem;
+    }
+    .b-left,
+    .b-right {
+        width: 48%;
+    }
+    .l-l :nth-child(2),
+    .l-l :nth-child(3) {
+        font-size: 1.8rem;
+    }
+}
+
+/* Medium screens (tablets, 768px to 991px) */
+@media (max-width: 991px) {
+    .b-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .b-left,
+    .b-right {
+        width: 100%;
+    }
+    .l-l :nth-child(2),
+    .l-l :nth-child(3) {
+        font-size: 1.6rem;
+    }
+    .b-left {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Small screens (phones, 576px to 767px) */
+@media (max-width: 767px) {
+    .b-container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .l-l :nth-child(2),
+    .l-l :nth-child(3) {
+        font-size: 1.4rem;
+    }
+    .l-l > button {
+        font-size: 1.1rem;
+    }
+    .b-left > img {
+        margin-bottom: -2rem;
+    }
+}
+
+/* Extra small screens (phones, less than 576px) */
+@media (max-width: 575px) {
+    .b-container {
+        padding: 0.5rem;
+        gap: 1rem;
+        margin-top: 160rem;
+    }
+    .l-l :nth-child(1) {
+        font-size: 1rem;
+    }
+    .l-l :nth-child(2),
+    .l-l :nth-child(3) {
+        font-size: 1.2rem;
+    }
+    .l-l > button {
+        font-size: 1rem;
+    }
+    .b-left > img {
+        margin-bottom: -1.5rem;
+    }
+}
